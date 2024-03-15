@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.Register {
+  color: white;
+}
+.Login {
+  color: whitesmoke;
+}
+body {
+  background-color: #09191f;
+  /* background:linear-gradient(45deg,red, orange);
+    background-repeat:none; */
+}
+#mainbox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50vw;
+  margin-left: 25%;
+  margin-top: 4rem;
+  /* border: 1px black solid;*/
+}
+#text {
+  font-size: 5rem;
+  margin-left: 12%;
+  color: white;
+}
+#inputwrapper {
+  /* border: 1px solid black;*/
+  display: flex;
+  width: 50vw;
+  height: 2rem;
+  gap: 0.2em;
+}
+#todoinput {
+  width: 80%;
+  height: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 5px 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  outline: none;
+  font-family: Helvetica;
+  font-size: 1.25rem;
+}
+#todobutton {
+  border: none;
+  width: 20%;
+  height: 100%;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#todos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+  margin-top: 3rem;
+  margin-left: 15%;
+}
+.todoitem {
+  color: white;
+  font: 1rem;
+  height: 2rem;
+  width: 60%;
+  background-color: black;
+  border-radius: 2rem;
+
+  margin-left: 12%;
+  font-size: 1.25rem;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+.false {
+  font-family: sans-serif;
+}
+.true {
+  font-family: sans-serif;
+  color: green;
+}
+.todocheck {
+  border-radius: 40%;
+  width: 50px;
+  height: 90%;
+  border: none;
+}
+.tododelete {
+  border-radius: 40%;
+  width: 50px;
+  height: 90%;
+
+  border: none;
+  margin-right: 10px;
+  outline: none;
+}
+.cardbuttons {
+  margin-right: 15px;
+  padding-right: 3px;
+  margin-top: 0px;
+  display: flex;
+  gap: 20px;
+}
+.iconcheck {
+  color: grey;
+  font-size: 2rem;
+}
+.icondelete {
+  color: grey;
+  font-size: 2rem;
+}
+.iconcheck:hover {
+  color: green;
+}
+.icondelete:hover {
+  color: red;
+}
+.completed {
+  color: green;
+}
+.tododel {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: none;
+  margin-right: 2px;
+  outline: none;
+}
+.icondel {
+  color: grey;
+}
+#tasktest {
+  color: aqua;
+  font-family: sans-serif;
+  font-size: 2rem;
+  padding-left: 30%;
+}
