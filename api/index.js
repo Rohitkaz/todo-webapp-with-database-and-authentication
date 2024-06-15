@@ -17,8 +17,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://todo-webapp-with-database-and-authentication-frontend.vercel.app",
-    Methods: {"POST","GET","DELETE"},
+    origin: "http://localhost:5173",
+
     credentials: true,
   })
 );
@@ -53,6 +53,7 @@ app.post("/register", async (req, res) => {
   return res.status(200).json("user regisetered");
 });
 app.post("/login", async (req, res) => {
+  console.log("hi");
   const name = req.body.name;
   const password = req.body.password;
 

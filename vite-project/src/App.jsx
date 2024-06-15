@@ -41,7 +41,7 @@ const router = createBrowserRouter([
         path: "/todos",
         loader: async ({ request }) => {
           try {
-            const res = await axios.get("https://todo-webapp-with-database-and-authentication.vercel.app/todos", {
+            const res = await axios.get("http://localhost:8000/todos", {
               withCredentials: true,
             });
             const data = await res.data;
