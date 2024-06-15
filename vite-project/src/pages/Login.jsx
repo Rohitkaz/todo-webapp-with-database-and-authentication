@@ -11,7 +11,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const res = await axios.post(
-            "http://localhost:8000/login",
+            "https://todo-webapp-with-database-and-authentication.vercel.app/login",
             { name, password },
             { withCredentials: true }
         );
@@ -22,7 +22,7 @@ const Login = () => {
         }
     };
     const getData = async () => {
-        const res = await axios.get("http://localhost:8000/data", {
+        const res = await axios.get("https://todo-webapp-with-database-and-authentication.vercel.app/data", {
             withCredentials: true,
         });
         console.log(res.data.password);
