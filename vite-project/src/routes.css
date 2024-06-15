@@ -13,10 +13,11 @@
   font-size: 2rem;
   color: whitesmoke;
 }
-.header {
+.headerb {
   display: flex;
-  margin-right: 2rem;
-  gap: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  gap: 1rem;
 }
 .headerbuttons {
   text-decoration: none;

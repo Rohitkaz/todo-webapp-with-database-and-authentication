@@ -21,7 +21,6 @@ body {
   width: 50vw;
   margin-left: 25%;
   margin-top: 4rem;
-  /* border: 1px black solid;*/
 }
 #text {
   font-size: 5rem;
@@ -143,4 +142,29 @@ body {
   font-family: sans-serif;
   font-size: 2rem;
   padding-left: 30%;
+}
+@media screen and (max-width: 600px) {
+  #LoginForm {
+    width: 75%;
+    margin-left: 10%;
+    height: 70%;
+  }
+  #text {
+    font-size: 3rem;
+  }
+  #mainbox {
+    width: 100%;
+    margin-left: 0px;
+  }
+  #inputwrapper {
+    width: 100%;
+  }
+  #todos {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .todoitem {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
