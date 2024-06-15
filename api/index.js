@@ -17,7 +17,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://todo-webapp-with-database-and-authentication-okbp.vercel.app/",
+    origin: "https://todo-webapp-with-database-and-authentication-okbp.vercel.app",
     credentials: true,
   })
 );
