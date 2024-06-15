@@ -10,10 +10,13 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8000/register", {
-        name,
-        password,
-      });
+      const res = await axios.post(
+        "https://todo-webapp-with-database-and-authentication.vercel.app/register",
+        {
+          name,
+          password,
+        }
+      );
 
       if (res.status == 200) {
         navigate("/Login");

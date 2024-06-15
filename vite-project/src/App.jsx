@@ -9,7 +9,7 @@ import Login from "./pages/Login";
 
 import Register from "./pages/Register";
 import Header from "./pages/Header";
-import Todos from "./pages/todos";
+import Todos from "./pages/Todos";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
