@@ -7,9 +7,11 @@ const Register = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  axios.defaults.withCredentials = true;
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+<<<<<<< HEAD
       const res = await axios.post(
         "https://todo-webapp-with-database-and-authentication.vercel.app/register",
         {
@@ -17,6 +19,12 @@ const Register = () => {
           password,
         }
       );
+=======
+      const res = await axios.post("https://todo-webapp-with-database-and-authentication.vercel.app/register", {
+        name,
+        password,
+      });
+>>>>>>> b50765e45f2a682f643342e815f45bad53878f90
 
       if (res.status == 200) {
         navigate("/Login");

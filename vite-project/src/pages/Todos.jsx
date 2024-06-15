@@ -18,7 +18,7 @@ export default function Todos() {
     // const queryparams = new URLSearchParams(task_id);
     try {
       const res = await axios.delete(
-        `http://localhost:8000/todos/${task_id}`,
+        `https://todo-webapp-with-database-and-authentication.vercel.app/todos/${task_id}`,
 
         { withCredentials: true }
       );
@@ -32,7 +32,7 @@ export default function Todos() {
   async function handleclick() {
     try {
       const res = await axios.post(
-        "http://localhost:8000/todos",
+        "https://todo-webapp-with-database-and-authentication.vercel.app/todos",
         { task },
         { withCredentials: true }
       );
@@ -47,7 +47,7 @@ export default function Todos() {
   useEffect(() => {
     async function fetchTodos() {
       try {
-        const res = await axios.get("http://localhost:8000/todos", {
+        const res = await axios.get("https://todo-webapp-with-database-and-authentication.vercel.app/todos", {
           withCredentials: true,
         });
         const todolist = res;
@@ -66,7 +66,7 @@ export default function Todos() {
   }, []);*/
   async function Logout() {
     try {
-      const res = await axios.get("http://localhost:8000/logout", {
+      const res = await axios.get("https://todo-webapp-with-database-and-authentication.vercel.app/logout", {
         withCredentials: true,
       });
       console.log(res.status);
@@ -81,7 +81,7 @@ export default function Todos() {
     // const queryparams = new URLSearchParams(task_id);
     try {
       const res = await axios.put(
-        `http://localhost:8000/todos`,
+        `https://todo-webapp-with-database-and-authentication.vercel.app/todos`,
         { task_id },
         { withCredentials: true }
       );
